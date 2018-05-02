@@ -1,0 +1,109 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:cust="clr-namespace:SportingEventManager.Players"
+             xmlns:local="clr-namespace:SportingEventManager"
+             xmlns:data="clr-namespace:SportingEventManager.Data;assembly=SportingEventManager.Data"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+            xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+            x:Class="SportingEventManager.Players.PlayerListView"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <!--local:MvvmBehaviors.LoadedMethodName="LoadPlayers">-->
+    <!--local:ViewModelLocator.AutoWireViewModel="True">-->
+    <!--<UserControl.InputBindings>
+        <KeyBinding Key="D"
+                    Modifiers="Control"
+                    Command="{Binding DeleteCommand}" />
+    </UserControl.InputBindings>
+    <UserControl.DataContext>
+        <cust:PlayerListViewModel />
+    </UserControl.DataContext>-->
+    <UserControl.Resources>
+        <!--<DataTemplate x:Key="PlayerTemplate">-->
+        <DataTemplate DataType="{x:Type data:Player}">
+            <Border BorderThickness="3" BorderBrush="Blue">
+                <StackPanel>
+                    <TextBlock Text="{Binding Min}" />
+                    <TextBlock Text="{Binding Max}" />
+                    <TextBlock Text="{Binding Name}" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </UserControl.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <ei:CallMethodAction TargetObject="{Binding}" MethodName="LoadPlayers" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Button Content="Delete"
+                Command="{Binding DeleteCommand}"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="75" />
+        
+        <Button Content="Add Player"
+                Command="{Binding AddPlayerCommand}"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="80,0,0,0"
+                Width="100" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1">
+            <Label Content="Search:" />
+            <TextBox Text="{Binding SearchInput, UpdateSourceTrigger=PropertyChanged}" Width="150" />
+            <Button Content="X"
+                    Command="{Binding ClearSearchCommand}" />
+        </StackPanel>
+        <!--ItemTemplate="{StaticResource PlayerTemplate}"/>-->
+        <!--<DataGrid ItemsSource="{Binding Players}" />-->
+        <DataGrid x:Name="playerDataGrid"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  EnableRowVirtualization="True"
+                  ItemsSource="{Binding Players}"
+                  SelectedItem="{Binding SelectedPlayer}"
+                  RowDetailsVisibilityMode="VisibleWhenSelected"
+                  Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}" Width="*" />
+                <!--<DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Place Order" Command="{Binding DataContext.PlaceOrderCommand,
+                                        RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                                        CommandParameter="{Binding}" Margin="5" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Edit" Command="{Binding DataContext.EditPlayerCommand,
+                                        RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                                        CommandParameter="{Binding}" Margin="5" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+           </DataGrid.Columns>
+                        <!--<DataGridTextColumn x:Name="minColumn"
+                                    Binding="{Binding Min}"
+                                    Header="First Name"
+                                    Width="SizeToHeader" />
+                <DataGridTextColumn x:Name="maxColumn"
+                                    Binding="{Binding Max}"
+                                    Header="First Name"
+                                    Width="SizeToHeader" />
+                
+            </DataGrid.Columns>-->
+        </DataGrid>
+        <ListBox Grid.Row="2" ItemsSource="{Binding Players}"  />
+    </Grid>
+</UserControl>
