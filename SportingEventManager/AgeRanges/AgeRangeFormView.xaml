@@ -38,12 +38,12 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Min:"/>
-            <TextBox x:Name="minTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Min, ValidatesOnNotifyDataErrors=true}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
-            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Max:"/>
-            <TextBox x:Name="maxTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Max, ValidatesOnNotifyDataErrors=true}" Grid.Row="1" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
-            <!--<Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Name"/>
-            <TextBox x:Name="nameTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Name, ValidatesOnNotifyDataErrors=true}" Grid.Row="2" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>-->
+            <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Name"/>
+            <TextBox x:Name="nameTextBox" Width="120" VerticalAlignment="Center" IsReadOnly="True" Text="{Binding Name, ValidatesOnNotifyDataErrors=true, Mode=OneWay}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Min:"/>
+            <TextBox x:Name="minTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Min, ValidatesOnNotifyDataErrors=true}" Grid.Row="1" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Max:"/>
+            <TextBox x:Name="maxTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Max, ValidatesOnNotifyDataErrors=true}" Grid.Row="2" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
         </Grid>
         <Grid Grid.Row="1">
             <Button Content="Save" Command="{Binding SaveCommand}" Visibility="{Binding EditMode, Converter={StaticResource VisConverter}}" HorizontalAlignment="Left" Margin="25,5,0,0" VerticalAlignment="Top" Width="75" />

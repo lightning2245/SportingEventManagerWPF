@@ -333,13 +333,13 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ZzaDashboard\SportingEventManager.Data\SportingEventManager.Data.csproj">
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportingEventManager.Data\SportingEventManager.Data.csproj">
       <Project>{bb1e80de-e6d1-4e29-bc2d-db66b81163c5}</Project>
       <Name>SportingEventManager.Data</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

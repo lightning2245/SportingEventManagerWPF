@@ -74,7 +74,7 @@ namespace SportingEventManager.SportsEvents
 
         public string OrganizerName
         {
-            get { return Organizer == null ? "" : Organizer.Name; }
+            get { return Organizer == null ? "" : Organizer.FirstName + " " + Organizer.LastName; }
         }
 
 

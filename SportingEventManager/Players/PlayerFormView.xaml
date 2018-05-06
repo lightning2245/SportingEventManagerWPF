@@ -42,15 +42,15 @@
             </Grid.ColumnDefinitions>
             <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="First Name:"/>
             <TextBox x:Name="fNameTextBox" Width="120" VerticalAlignment="Center" Text="{Binding FirstName, ValidatesOnNotifyDataErrors=true}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
-            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Last Name"/>
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Last Name:"/>
             <TextBox x:Name="lNameTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Last, ValidatesOnNotifyDataErrors=true}" Grid.Row="1" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
-            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="City"/>
-            <TextBox x:Name="cityTextBox" Width="120" VerticalAlignment="Center" Text="{Binding City, ValidatesOnNotifyDataErrors=true}" Grid.Row="2" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
-            <Label VerticalAlignment="Center" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="State"/>
-            <TextBox x:Name="stateTextBox" Width="120" VerticalAlignment="Center" Text="{Binding State, ValidatesOnNotifyDataErrors=true}" Grid.Row="3" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
-            <!--<Label VerticalAlignment="Center" Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Street"/>
-            <TextBox x:Name="streetTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Street, ValidatesOnNotifyDataErrors=true}" Grid.Row="4" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>-->
-            <Label VerticalAlignment="Center" Grid.Row="5" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Zip"/>
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="DOB:"/>
+            <TextBox x:Name="dobTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Birthdate, ValidatesOnNotifyDataErrors=true}" Grid.Row="2" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="City:"/>
+            <TextBox x:Name="cityTextBox" Width="120" VerticalAlignment="Center" Text="{Binding City, ValidatesOnNotifyDataErrors=true}" Grid.Row="3" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="State:"/>
+            <TextBox x:Name="stateTextBox" Width="120" VerticalAlignment="Center" Text="{Binding State, ValidatesOnNotifyDataErrors=true}" Grid.Row="4" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="5" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Zip:"/>
             <TextBox x:Name="zipTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Zip, ValidatesOnNotifyDataErrors=true}" Grid.Row="5" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
         </Grid>
         <Grid Grid.Row="1">

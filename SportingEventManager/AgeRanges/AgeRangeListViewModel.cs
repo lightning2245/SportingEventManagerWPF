@@ -135,7 +135,8 @@ namespace SportingEventManager.AgeRanges
             }
             else
             {
-                AgeRanges = new ObservableCollection<AgeRange>(_allAgeRanges.Where(c => c.Name.ToLower().Contains(searchInput.ToLower())));
+                AgeRanges = new ObservableCollection<AgeRange>(_allAgeRanges.Where(c => c.Min.ToString() == searchInput.Trim() ||
+                                                                                        c.Max.ToString() == searchInput.Trim()));
             }
         }
     }

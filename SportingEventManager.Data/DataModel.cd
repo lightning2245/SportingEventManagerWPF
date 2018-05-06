@@ -1,55 +1,96 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Zza.Data.Order">
-    <Position X="4.5" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>CBAGAAAEAAEAAAAEBAAAEAAAAgAIARAAAAABIAAAAAA=</HashCode>
-      <FileName>Order.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Zza.Data.Customer">
-    <Position X="6.75" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAECAEAAACEgAIAIAAEAGAAAgAAAAAAAAAIAJCACABk=</HashCode>
-      <FileName>Customer.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Zza.Data.OrderItem">
+  <Class Name="SportingEventManager.Data.OrderItem">
     <Position X="6.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>MAECAAAAAAAAgAAAAAAAEAAAAAAIQAAAAAAAgAJAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAQIAAAAAAABgAAAAAA=</HashCode>
       <FileName>OrderItem.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Zza.Data.Product">
-    <Position X="8.5" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACgAAAAAAgAAAAAAAAAAQAAAAAAJAAwQAAAAAAAAA=</HashCode>
-      <FileName>Product.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Zza.Data.ProductOption">
+  <Class Name="SportingEventManager.Data.ProductOption">
     <Position X="12.75" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAABAAIAAAAEAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>IAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ProductOption.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Zza.Data.ProductOptionItem">
-    <Position X="10.25" Y="5" Width="2" />
+  <Class Name="SportingEventManager.Data.Coach">
+    <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAgAQAAAA=</HashCode>
-      <FileName>ProductOptionItem.cs</FileName>
+      <HashCode>AIQCAEaAJAAABAAIAAICDGRAAEAAAABGBAKABCECAAg=</HashCode>
+      <FileName>Models\Coach.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Zza.Data.Player">
-    <Position X="10.25" Y="6.25" Width="1.5" />
+  <Class Name="SportingEventManager.Data.Gender">
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAECAEAAACEgAIAIAAEAGAAAgAAAAAAAAAIAJCACABk=</HashCode>
-      <FileName>Player.cs</FileName>
+      <HashCode>AAASAAAAAAABAAAQAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Gender.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SportingEventManager.Data.Guardian">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAgAAAAIAAIACAQAABAgAAACAAIABAAAAAg=</HashCode>
+      <FileName>Models\Guardian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.Location" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAIAAAABAAAYAAAACCQAAAAAAAhCAAIABAACAAA=</HashCode>
+      <FileName>Models\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.Organizer" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEIAAAAAAAAIAAAACCQAAAAAAABCAAIABAACAAg=</HashCode>
+      <FileName>Models\Organizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.Player">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAEIAAAAAZACIAgAACCQAAAAAEABCAAIABAACAAg=</HashCode>
+      <FileName>Models\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.RoleName">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RoleName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.Schedule" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAABAAAQAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.Sport" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAABAAAQAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Sport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.SportsEvent">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAKAAIAAAgBCADQAgIBCAQAAFAoMAgCAACAAgAAAQA=</HashCode>
+      <FileName>Models\SportsEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportingEventManager.Data.AgeRange" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAIAABABAAAREAAAACQAgAAAAAhAAAAAAAACAAA=</HashCode>
+      <FileName>Models\AgeRange.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
