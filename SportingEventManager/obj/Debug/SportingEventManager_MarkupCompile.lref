@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
 
 FC:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\AgeRanges\AgeRangeFormView.xaml;;
@@ -21,4 +22,29 @@ FC:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\
 FC:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\SportsEvents\SportsEventListView.xaml;;
 FC:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Sports\SportFormView.xaml;;
 FC:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Sports\SportListView.xaml;;
+=======
+﻿C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\AgeRanges\AgeRangeFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\AgeRanges\AgeRangeListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Coaches\CoachFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Coaches\CoachListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Genders\GenderFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Genders\GenderListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Guardians\GuardianFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Guardians\GuardianListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Locations\LocationFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Locations\LocationListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\MainWindow.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Organizers\OrganizerFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Organizers\OrganizerListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Players\PlayerFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Players\PlayerListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Schedules\ScheduleFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Schedules\ScheduleListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\SportsEvents\SportsEventFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\SportsEvents\SportsEventListView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Sports\SportFormView.xaml;;
+FC:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\Sports\SportListView.xaml;;
+>>>>>>> origin/master
 

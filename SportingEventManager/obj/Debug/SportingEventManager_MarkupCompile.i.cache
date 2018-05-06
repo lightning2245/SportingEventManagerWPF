@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\
+=======
+C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\
+>>>>>>> origin/master
 SportingEventManager
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\App.xaml
 211789523611
 
 88-2075595577
 28286807541
+=======
+C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\App.xaml
+211789523611
+
+88-2075595577
+28-1381541770
+>>>>>>> origin/master
 AgeRanges\AgeRangeFormView.xaml;AgeRanges\AgeRangeListView.xaml;Coaches\CoachFormView.xaml;Coaches\CoachListView.xaml;Genders\GenderFormView.xaml;Genders\GenderListView.xaml;Guardians\GuardianFormView.xaml;Guardians\GuardianListView.xaml;Locations\LocationFormView.xaml;Locations\LocationListView.xaml;MainWindow.xaml;Organizers\OrganizerFormView.xaml;Organizers\OrganizerListView.xaml;Players\PlayerFormView.xaml;Players\PlayerListView.xaml;Schedules\ScheduleFormView.xaml;Schedules\ScheduleListView.xaml;SportsEvents\SportsEventFormView.xaml;SportsEvents\SportsEventListView.xaml;Sports\SportFormView.xaml;Sports\SportListView.xaml;
 
 True
