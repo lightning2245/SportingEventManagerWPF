@@ -204,7 +204,7 @@ namespace SportingEventManager
                 //case "ageRangeDetail":
                 //    CurrentViewModel = _ageRangeDetailViewModel;
                 //    break;
-                case "ageRangeForm":
+                case "ageRangeFormAdd":
                     CurrentViewModel = _ageRangeFormViewModel;
                     break;
 

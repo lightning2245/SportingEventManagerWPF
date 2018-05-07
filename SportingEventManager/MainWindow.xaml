@@ -93,42 +93,94 @@
             <AgeRanges:AgeRangeDetailView />
         </DataTemplate>-->
     </Window.Resources>
-    <Grid>
-        <!--<AgeRanges:AgeRangeListView />-->
-        <!--<ContentControl Content="{Binding CurrentViewModel}" />-->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid x:Name="NavBar">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button Content="Age Ranges" Command="{Binding NavCommand}" CommandParameter="ageRangeList" Grid.Column="0" />
-            <Button Content="Coaches" Command="{Binding NavCommand}" CommandParameter="coachList" Grid.Column="1" />
-            <Button Content="Genders" Command="{Binding NavCommand}" CommandParameter="genderList" Grid.Column="2" />
-            <Button Content="Guardians" Command="{Binding NavCommand}" CommandParameter="guardianList" Grid.Column="3" />
-            <Button Content="Locations" Command="{Binding NavCommand}" CommandParameter="locationList" Grid.Column="4" />
-            <Button Content="Organizers" Command="{Binding NavCommand}" CommandParameter="organizerList" Grid.Column="5" />
-            <Button Content="Players" Command="{Binding NavCommand}" CommandParameter="playerList" Grid.Column="6" />
-            <Button Content="Schedules" Command="{Binding NavCommand}" CommandParameter="scheduleList" Grid.Column="7" />
-            <Button Content="Sports" Command="{Binding NavCommand}" CommandParameter="sportList" Grid.Column="8" />
-            <Button Content="Sports Events" Command="{Binding NavCommand}" CommandParameter="sportsEventList" Grid.Column="9" />
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Age Ranges">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="ageRangeList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Coaches">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="coachList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Genders">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="genderList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Guardians">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="guardianList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Locations">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="locationList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Organizers">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="organizerList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Players">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="playerList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Schedules">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="scheduleList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Sports">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="sportList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Sports Events">
+                <MenuItem Header="_List" Command="{Binding NavCommand}" CommandParameter="sportsEventList" />
+                <MenuItem Header="_Detail" />
+                <MenuItem Header="_New" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <!--<AgeRanges:AgeRangeListView />-->
+            <!--<ContentControl Content="{Binding CurrentViewModel}" />-->
+            <Grid.RowDefinitions>
+               <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
             
+            <ContentControl>
+                <i:Interaction.Behaviors>
+                    <local:ShowNotificationMessageBehavior Message="{Binding NotificationMessage}" />
+                </i:Interaction.Behaviors>
+            </ContentControl>
+            <ContentControl Content="{Binding CurrentViewModel}" Grid.Row="1" />
         </Grid>
-        <ContentControl>
-            <i:Interaction.Behaviors>
-                <local:ShowNotificationMessageBehavior Message="{Binding NotificationMessage}" />
-            </i:Interaction.Behaviors>
-        </ContentControl>
-        <ContentControl Content="{Binding CurrentViewModel}" Grid.Row="1" />
-    </Grid>
+    </DockPanel>   
+    
 </Window>

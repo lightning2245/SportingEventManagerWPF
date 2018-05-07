@@ -11,28 +11,18 @@
             x:Class="SportingEventManager.AgeRanges.AgeRangeListView"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <!--local:MvvmBehaviors.LoadedMethodName="LoadAgeRanges">-->
-    <!--local:ViewModelLocator.AutoWireViewModel="True">-->
-    <!--<UserControl.InputBindings>
-        <KeyBinding Key="D"
-                    Modifiers="Control"
-                    Command="{Binding DeleteCommand}" />
-    </UserControl.InputBindings>
-    <UserControl.DataContext>
-        <cust:AgeRangeListViewModel />
-    </UserControl.DataContext>-->
-    <UserControl.Resources>
-        <!--<DataTemplate x:Key="AgeRangeTemplate">-->
+
+    <!--<UserControl.Resources>
         <DataTemplate DataType="{x:Type data:AgeRange}">
             <Border BorderThickness="3" BorderBrush="Blue">
                 <StackPanel>
+                    <TextBlock Text="{Binding Name}" />
                     <TextBlock Text="{Binding Min}" />
                     <TextBlock Text="{Binding Max}" />
-                    <TextBlock Text="{Binding Name}" />
                 </StackPanel>
             </Border>
         </DataTemplate>
-    </UserControl.Resources>
+    </UserControl.Resources>-->
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <ei:CallMethodAction TargetObject="{Binding}" MethodName="LoadAgeRanges" />
@@ -62,8 +52,7 @@
             <Button Content="X"
                     Command="{Binding ClearSearchCommand}" />
         </StackPanel>
-        <!--ItemTemplate="{StaticResource AgeRangeTemplate}"/>-->
-        <!--<DataGrid ItemsSource="{Binding AgeRanges}" />-->
+        
         <DataGrid x:Name="ageRangeDataGrid"
                   AutoGenerateColumns="False"
                   CanUserAddRows="False"
@@ -74,15 +63,7 @@
                   Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Width="*" />
-                <!--<DataGridTemplateColumn>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Button Content="Place Order" Command="{Binding DataContext.PlaceOrderCommand,
-                                        RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
-                                        CommandParameter="{Binding}" Margin="5" />
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>-->
+                
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -93,17 +74,8 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
            </DataGrid.Columns>
-                        <!--<DataGridTextColumn x:Name="minColumn"
-                                    Binding="{Binding Min}"
-                                    Header="First Name"
-                                    Width="SizeToHeader" />
-                <DataGridTextColumn x:Name="maxColumn"
-                                    Binding="{Binding Max}"
-                                    Header="First Name"
-                                    Width="SizeToHeader" />
-                
-            </DataGrid.Columns>-->
+                        
         </DataGrid>
-        <ListBox Grid.Row="2" ItemsSource="{Binding AgeRanges}"  />
+        <!--<ListBox Grid.Row="2" ItemsSource="{Binding AgeRanges}"  />-->
     </Grid>
 </UserControl>
