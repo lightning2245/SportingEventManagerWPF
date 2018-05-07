@@ -186,7 +186,6 @@ C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_bad\SportingEventManag
 C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_bad\SportingEventManager\SportingEventManager\obj\Debug\SportingEventManager.csproj.CoreCompileInputs.cache
 C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_bad\SportingEventManager\SportingEventManager\obj\Debug\SportingEventManager.exe
 C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_bad\SportingEventManager\SportingEventManager\obj\Debug\SportingEventManager.pdb
-<<<<<<< HEAD
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\SportingEventManager.csprojResolveAssemblyReference.cache
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\AgeRanges\AgeRangeFormView.g.cs
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\Coaches\CoachFormView.g.cs
@@ -408,4 +407,3 @@ C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManag
 C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\SportingEventManager.csproj.CoreCompileInputs.cache
 C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\SportingEventManager.exe
 C:\Practice\MVVM\WPFMVVM-StarterCode\SportingEventManager_WPF\SportingEventManager\SportingEventManager\obj\Debug\SportingEventManager.pdb
->>>>>>> origin/master
