@@ -25,4 +25,3 @@ C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager.D
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager.Data\obj\Debug\SportingEventManager.Data.csproj.CoreCompileInputs.cache
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager.Data\obj\Debug\SportingEventManager.Data.dll
 C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager.Data\obj\Debug\SportingEventManager.Data.pdb
-C:\Practice\SportingEventManager_WPF\SportingEventManager\SportingEventManager.Data\obj\Debug\SportingEventManager.Data.csprojResolveAssemblyReference.cache
